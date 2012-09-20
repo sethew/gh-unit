@@ -51,19 +51,19 @@
 #import "objc/Protocol.h"
 #import <libkern/OSAtomic.h>
 
-OBJC_EXPORT Class object_getClass(id obj);
-OBJC_EXPORT const char *class_getName(Class cls);
-OBJC_EXPORT BOOL class_conformsToProtocol(Class cls, Protocol *protocol);
-OBJC_EXPORT Class class_getSuperclass(Class cls);
-OBJC_EXPORT Method *class_copyMethodList(Class cls, unsigned int *outCount);
-OBJC_EXPORT SEL method_getName(Method m);
-OBJC_EXPORT void method_exchangeImplementations(Method m1, Method m2);
-OBJC_EXPORT IMP method_getImplementation(Method method);
-OBJC_EXPORT IMP method_setImplementation(Method method, IMP imp);
-OBJC_EXPORT struct objc_method_description protocol_getMethodDescription(Protocol *p,
-                                                                         SEL aSel,
-                                                                         BOOL isRequiredMethod,
-                                                                         BOOL isInstanceMethod);
+//OBJC_EXPORT Class object_getClass(id obj);
+//OBJC_EXPORT const char *class_getName(Class cls);
+//OBJC_EXPORT BOOL class_conformsToProtocol(Class cls, Protocol *protocol);
+//OBJC_EXPORT Class class_getSuperclass(Class cls);
+//OBJC_EXPORT Method *class_copyMethodList(Class cls, unsigned int *outCount);
+//OBJC_EXPORT SEL method_getName(Method m);
+//OBJC_EXPORT void method_exchangeImplementations(Method m1, Method m2);
+//OBJC_EXPORT IMP method_getImplementation(Method method);
+//OBJC_EXPORT IMP method_setImplementation(Method method, IMP imp);
+//OBJC_EXPORT struct objc_method_description protocol_getMethodDescription(Protocol *p,
+//                                                                         SEL aSel,
+//                                                                         BOOL isRequiredMethod,
+//                                                                         BOOL isInstanceMethod);
 
 // If building for 10.4 but using the 10.5 SDK, don't include these.
 #if MAC_OS_X_VERSION_MAX_ALLOWED < MAC_OS_X_VERSION_10_5

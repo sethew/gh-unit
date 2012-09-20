@@ -90,7 +90,7 @@
   return YES;
 }
 
-- (void)test_EXPECTED {
+- (void)_test_EXPECTED {
   [self prepare];
   [self performSelectorInBackground:@selector(_delayedRaise) withObject:nil];
   [self waitForStatus:kGHUnitWaitStatusSuccess timeout:1.0];
