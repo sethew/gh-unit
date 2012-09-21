@@ -324,8 +324,6 @@ NSString *GHU_GTMStackTrace(void) {
   return result;
 }
 
-#if MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_5
-
 NSString *GHU_GTMStackTraceFromException(NSException *e) {
   NSString *trace = @"";
   
@@ -354,5 +352,3 @@ NSString *GHU_GTMStackTraceFromException(NSException *e) {
   
   return trace;
 }
-
-#endif  // MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_5
